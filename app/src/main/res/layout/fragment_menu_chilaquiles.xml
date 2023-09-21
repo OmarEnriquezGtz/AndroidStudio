@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:stretchColumns="*"
+        tools:context=".ui.menu_chilaquiles.Menu_ChilaquilesFragment">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:text="PRODUCTO"
+                android:textStyle="bold"/>
+            <TextView
+                android:text="PRECIO"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:text="CANTIDAD"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:text="TOTAL"/>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="left|center"
+                android:text="Sencillos:" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center"
+                android:text="@string/price_chila_sencillos"
+                />
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/decrease_chila_sencillos"
+                    android:onClick="decreaseChila_sencillos"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-"
+                    />
+
+                <TextView
+                    android:id="@+id/integer_chila_sencillos"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:text="0" />
+                <Button
+                    android:id="@+id/increase_chila_sencillos"
+                    android:onClick="increaseChila_sencillos"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/integer_chila_sencillostot"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center"
+                android:text="$0.00"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="left|center"
+                android:text="Con Pollo:" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center"
+                android:text="@string/price_chila_pollo"
+                />
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/decrease_chila_pollo"
+                    android:onClick="decreaseChila_pollo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-" />
+                <TextView
+                    android:id="@+id/integer_chila_pollo"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="0"/>
+                <Button
+                    android:id="@+id/increase_chila_pollo"
+                    android:onClick="increaseChila_pollo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/integer_chila_pollotot"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center"
+                android:text="$0.00"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="left|center"
+                android:text="Con Bistec:" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center"
+                android:text="@string/price_chila_bistec"
+                />
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/decrease_chila_bistec"
+                    android:onClick="decreaseChila_bistec"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-" />
+                <TextView
+                    android:id="@+id/integer_chila_bistec"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="0"/>
+                <Button
+                    android:id="@+id/increase_chila_bistec"
+                    android:onClick="increaseChila_bistec"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/integer_chila_bistectot"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center"
+                android:text="$0.00"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="left|center"
+                android:text="Con Huevo:" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center"
+                android:text="@string/price_chila_huevo"
+                />
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/decrease_chila_huevo"
+                    android:onClick="decreaseChila_huevo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-" />
+                <TextView
+                    android:id="@+id/integer_chila_huevo"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="0"/>
+                <Button
+                    android:id="@+id/increase_chila_huevo"
+                    android:onClick="increaseChila_huevo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/integer_chila_huevotot"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center"
+                android:text="$0.00"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="left|bottom"
+                android:text="Extras"
+                android:textStyle="bold"
+                android:layout_column="0"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="left|center"
+                android:text="Crema:" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center"
+                android:text="@string/price_crema"
+                />
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/decrease_crema"
+                    android:onClick="decreaseCrema"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-" />
+                <TextView
+                    android:id="@+id/integer_crema"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="0"/>
+                <Button
+                    android:id="@+id/increase_crema"
+                    android:onClick="increaseCrema"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/integer_crematot"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center"
+                android:text="$0.00"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="left|center"
+                android:text="Bolillo:" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center"
+                android:text="@string/price_bolillo"
+                />
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/decrease_bolillo2"
+                    android:onClick="decreaseBolillo2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-" />
+                <TextView
+                    android:id="@+id/integer_bolillo2"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="0"/>
+                <Button
+                    android:id="@+id/increase_bolillo2"
+                    android:onClick="increaseBolillo2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/integer_bolillo2tot"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:gravity="right|center"
+                android:text="$0.00"/>
+        </TableRow>
+
+
+
+
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/border2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="TOTAL:"
+                android:layout_column="2"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/integer_totalchilaquiles"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:layout_marginRight="10dp"
+                android:gravity="bottom|right|center"
+                android:text="$0.00"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+
+
+
+
+
+
+
+    </TableLayout>
+</ScrollView>

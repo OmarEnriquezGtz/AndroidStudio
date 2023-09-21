@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.eltamalito.ui.inicio.InicioFragment"
+        android:label="Bienvenido"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/nav_mesa1"
+        android:name="com.example.eltamalito.ui.mesa1.Mesa1Fragment"
+        android:label="@string/mesa_1"
+        tools:layout="@layout/fragment_mesa1" />
+
+    <fragment
+        android:id="@+id/nav_mesa2"
+        android:name="com.example.eltamalito.ui.mesa2.Mesa2Fragment"
+        android:label="@string/mesa_2"
+        tools:layout="@layout/fragment_mesa2" />
+
+    <fragment
+        android:id="@+id/nav_mesa3"
+        android:name="com.example.eltamalito.ui.mesa3.Mesa3Fragment"
+        android:label="@string/mesa_3"
+        tools:layout="@layout/fragment_mesa3" />
+    <fragment
+        android:id="@+id/nav_mesa4"
+        android:name="com.example.eltamalito.ui.mesa4.Mesa4Fragment"
+        android:label="@string/mesa_4"
+        tools:layout="@layout/fragment_mesa4" />
+    <fragment
+        android:id="@+id/nav_mesa5"
+        android:name="com.example.eltamalito.ui.mesa5.Mesa5Fragment"
+        android:label="@string/mesa_5"
+        tools:layout="@layout/fragment_mesa5" />
+    <fragment
+        android:id="@+id/nav_mesa6"
+        android:name="com.example.eltamalito.ui.mesa6.Mesa6Fragment"
+        android:label="@string/mesa_6"
+        tools:layout="@layout/fragment_mesa6" />
+    <fragment
+        android:id="@+id/nav_mesa7"
+        android:name="com.example.eltamalito.ui.mesa7.Mesa7Fragment"
+        android:label="@string/mesa_7"
+        tools:layout="@layout/fragment_mesa7" />
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.example.eltamalito.ui.menu.MenuFragment"
+        android:label="@string/menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/nav_menu_tamales"
+        android:name="com.example.eltamalito.ui.menu_tamales.Menu_TamalesFragment"
+        android:label="@string/menu_tamales"
+        tools:layout="@layout/fragment_menu_tamales" />
+    <fragment
+        android:id="@+id/nav_menu_atoles"
+        android:name="com.example.eltamalito.ui.menu_atoles.Menu_AtolesFragment"
+        android:label="@string/menu_atoles"
+        tools:layout="@layout/fragment_menu_atoles" />
+
+    <fragment
+        android:id="@+id/nav_menu_chilaquiles"
+        android:name="com.example.eltamalito.ui.menu_chilaquiles.Menu_ChilaquilesFragment"
+        android:label="@string/menu_chilaquiles"
+        tools:layout="@layout/fragment_menu_chilaquiles" />
+
+    <fragment
+        android:id="@+id/nav_menu_pozole"
+        android:name="com.example.eltamalito.ui.menu_pozole.Menu_PozoleFragment"
+        android:label="@string/menu_pozole"
+        tools:layout="@layout/fragment_menu_pozole" />
+    <fragment
+        android:id="@+id/nav_menu_pancita"
+        android:name="com.example.eltamalito.ui.menu_pancita.Menu_PancitaFragment"
+        android:label="@string/menu_pancita"
+        tools:layout="@layout/fragment_menu_pancita" />
+
+    <fragment
+        android:id="@+id/nav_menu_pambazos"
+        android:name="com.example.eltamalito.ui.menu_pambazos.Menu_PambazosFragment"
+        android:label="@string/menu_pambazos"
+        tools:layout="@layout/fragment_menu_pambazos" />
+    <fragment
+        android:id="@+id/nav_menu_huaraches"
+        android:name="com.example.eltamalito.ui.menu_huaraches.Menu_HuarachesFragment"
+        android:label="@string/menu_huaraches"
+        tools:layout="@layout/fragment_menu_huaraches" />
+
+    <fragment
+        android:id="@+id/nav_menu_tacos"
+        android:name="com.example.eltamalito.ui.menu_tacos.Menu_TacosFragment"
+        android:label="@string/menu_tacos"
+        tools:layout="@layout/fragment_menu_tacos" />
+    <fragment
+        android:id="@+id/nav_menu_mixiotes"
+        android:name="com.example.eltamalito.ui.menu_mixiotes.Menu_MixiotesFragment"
+        android:label="@string/menu_mixiotes"
+        tools:layout="@layout/fragment_menu_mixiotes" />
+
+    <fragment
+        android:id="@+id/nav_menu_extras"
+        android:name="com.example.eltamalito.ui.menu_extras.Menu_ExtrasFragment"
+        android:label="@string/menu_extras"
+        tools:layout="@layout/fragment_menu_extras" />
+    <fragment
+        android:id="@+id/nav_menu_refrescos"
+        android:name="com.example.eltamalito.ui.menu_refrescos.Menu_RefrescosFragment"
+        android:label="@string/menu_refrescos"
+        tools:layout="@layout/fragment_menu_refrescos" />
+
+
+</navigation>

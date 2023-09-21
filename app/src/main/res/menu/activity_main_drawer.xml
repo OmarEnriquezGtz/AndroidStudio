@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_inicio"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_mesa1"
+            android:icon="@drawable/ic_table"
+            android:title="@string/mesa_1" />
+
+        <item
+            android:id="@+id/nav_mesa2"
+            android:icon="@drawable/ic_table2"
+            android:title="@string/mesa_2" />
+        <item
+            android:id="@+id/nav_mesa3"
+            android:icon="@drawable/ic_table"
+            android:title="@string/mesa_3" />
+        <item
+            android:id="@+id/nav_mesa4"
+            android:icon="@drawable/ic_table2"
+            android:title="@string/mesa_4" />
+        <item
+            android:id="@+id/nav_mesa5"
+            android:icon="@drawable/ic_table"
+            android:title="@string/mesa_5" />
+        <item
+            android:id="@+id/nav_mesa6"
+            android:icon="@drawable/ic_table2"
+            android:title="@string/mesa_6" />
+        <item
+            android:id="@+id/nav_mesa7"
+            android:icon="@drawable/ic_table"
+            android:title="@string/mesa_7" />
+
+
+
+    </group>
+
+</menu>
